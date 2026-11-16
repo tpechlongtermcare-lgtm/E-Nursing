@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="zh-Hant" data-lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>智慧護理 · Smart Nursing</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link id="fontBase" href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;600&family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<a class="skip" href="#main" data-i="ui.skip">跳到主要內容</a>
+
+<header class="topbar">
+  <div class="topbar-in">
+    <div class="mark">
+      <img class="mark-logo" src="img/logo.png" alt="" width="34" height="34">
+      <span class="mark-tx">
+        <b class="mark-long" data-i="ui.org">臺北市立聯合醫院仁愛院區</b>
+        <b class="mark-short" data-i="ui.orgshort">仁愛院區護理科</b>
+        <i data-i="ui.orgsub">護理科 · 智慧護理</i>
+      </span>
+    </div>
+    <div class="topbar-ctl">
+      <button class="sndb" id="sndb" aria-pressed="true" title="">
+        <svg viewBox="0 0 24 24" aria-hidden="true" class="snd-on"><path d="M4 9v6h4l5 4V5L8 9H4z"/><path d="M16.5 8.5a5 5 0 0 1 0 7" fill="none" stroke-width="2"/><path d="M19 6a8.5 8.5 0 0 1 0 12" fill="none" stroke-width="2"/></svg>
+        <svg viewBox="0 0 24 24" aria-hidden="true" class="snd-off"><path d="M4 9v6h4l5 4V5L8 9H4z"/><path d="M17 9.5l5 5M22 9.5l-5 5" fill="none" stroke-width="2"/></svg>
+        <span id="sndlbl"></span>
+      </button>
+      <nav class="langs" id="langs" aria-label="Language"></nav>
+    </div>
+  </div>
+  <div class="topbar-rail" aria-hidden="true"></div>
+</header>
+
+<main id="main">
+
+  <!-- ─────────── HERO ─────────── -->
+  <section class="hero">
+    <div class="wrap">
+      <div class="orglock">
+        <img src="img/logo.png" alt="" width="62" height="62">
+        <div>
+          <b data-i="ui.org">臺北市立聯合醫院仁愛院區</b>
+          <span data-i="ui.dept">護理科</span>
+        </div>
+      </div>
+      <p class="hero-kicker" data-i="hero.kicker">2024 – 2026 成果</p>
+      <h1 class="hero-h" data-i="hero.title">把時間還給病人床邊</h1>
+      <p class="hero-lede" data-i="hero.lede">十套系統，從急性病房到住宿式長照。每一套都用結構、過程、結果三個面向檢證。下面每一格都可以點開試用。</p>
+
+      <div class="hero-stats" id="heroStats"></div>
+
+      <div class="board-head">
+        <p class="board-hint" data-i="hero.boardhint">點任一格進入該系統</p>
+        <div class="group-key" id="groupKey"></div>
+      </div>
+      <div class="board" id="board"></div>
+    </div>
+  </section>
+
+  <!-- ─────────── ARCHITECTURE ─────────── -->
+  <section class="arch" id="arch">
+    <div class="wrap">
+      <h2 class="sec-h" data-i="arch.title">整體架構</h2>
+      <p class="sec-lede" data-i="arch.lede">十套系統共用同一套檢證語言：建了什麼（結構）、流程怎麼改（過程）、指標動了多少（結果）。臨床資料回到 HIS／NIS，不另開一套病歷。</p>
+      <div class="arch-box" id="archBox"></div>
+    </div>
+  </section>
+
+  <!-- ─────────── SYSTEM SECTIONS ─────────── -->
+  <div id="systems"></div>
+
+  <!-- ─────────── CLOSING ─────────── -->
+  <section class="close">
+    <div class="wrap">
+      <h2 class="sec-h" data-i="close.title">十套系統放在一起看</h2>
+      <p class="sec-lede" data-i="close.lede">同一類指標跨系統比較。時間類指標一律換算成百分比，才能並排。</p>
+      <div class="close-grid">
+        <figure class="panel panel-chart">
+          <figcaption class="panel-cap" data-i="close.c1">作業時間縮減幅度</figcaption>
+          <div id="chartTime"></div>
+        </figure>
+        <figure class="panel panel-chart">
+          <figcaption class="panel-cap" data-i="close.c2">安全與品質指標：導入前後件數</figcaption>
+          <div id="chartSafety"></div>
+        </figure>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="wrap foot-in">
+    <div class="foot-org">
+      <img src="img/logo.png" alt="" width="40" height="40">
+      <span><b data-i="ui.org">臺北市立聯合醫院仁愛院區</b>
+        <i data-i="ui.dept">護理科</i></span>
+    </div>
+    <p data-i="foot.src">資料來源：臺北市立聯合醫院仁愛院區護理科智慧護理成果報告（2026.11.16）。頁面中所有照片與系統畫面均為原始檔，未經修改；住民、家屬與床號已於原件遮蔽。</p>
+    <p class="foot-mono">115.11.16</p>
+  </div>
+</footer>
+
+<script src="i18n.js"></script>
+<script src="data.js"></script>
+<script src="demos.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
