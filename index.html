@@ -1839,8 +1839,6 @@ I18N.zh = {
 'd.infect.cath':'系統偵測：該住民是否留置導尿管？',
 'd.infect.cathy':'有留置導尿管',
 'd.infect.cathn':'未留置導尿管',
-'d.infect.needy':'留置導尿管者，符合下列任一項即可收案。',
-'d.infect.needn':'未留置導尿管者，需符合下列至少三項才能收案。',
 'd.infect.symt':'請勾選符合的症狀',
 'd.infect.y1':'發燒 ≥ 38℃',
 'd.infect.y2':'頻尿',
@@ -1854,7 +1852,6 @@ I18N.zh = {
 'd.infect.yes':'是',
 'd.infect.no':'否',
 'd.infect.in':'收案',
-'d.infect.ind':'符合《長期照護機構感染管制手冊》泌尿道感染收案標準（{c}，勾選 {n} 項）。系統自動帶入監測指標、感染密度計算與品管管制圖。',
 'd.infect.out':'不收案',
 'd.infect.outd':'勾選 {n} 項，未達該條件要求的 {need} 項。系統仍留存紀錄於不收案線，可供查詢與回溯。',
 'd.infect.count':'已勾選 {n} ／ 需 {need} 項',
@@ -1955,7 +1952,47 @@ I18N.zh = {
 'arch.clear':'清除標示',
 'fold.detail':'結構面與過程面',
 'fold.items':'項',
-'fold.pics':'張'
+'fold.pics':'張',
+'d.infect.need1':'符合下列任一項即可收案。',
+'d.infect.needN':'需符合下列至少 {n} 項才能收案。',
+'d.infect.simplified':'此為簡化示範。實際系統依《長期照護機構感染管制手冊》完整條件逐項引導，各部位的判定項目與門檻以手冊為準。',
+'d.infect.q1':'系統偵測：是否有胸部 X 光可供判讀？',
+'d.infect.a1y':'有，且顯示肺炎或疑似肺炎',
+'d.infect.a1n':'無 X 光，或 X 光未顯示肺炎',
+'d.infect.r1':'發燒 ≥ 38℃',
+'d.infect.r2':'新發生或加劇的咳嗽',
+'d.infect.r3':'新發生或增加的痰液',
+'d.infect.r4':'呼吸速率 ≥ 25 次／分',
+'d.infect.r5':'血氧飽和度 < 94%（室內空氣）',
+'d.infect.r6':'肺部聽診出現新的異常音',
+'d.infect.r7':'新發生或惡化之意識改變',
+'d.infect.q3':'系統偵測：是否有糞便檢驗陽性結果？',
+'d.infect.a3y':'有陽性檢驗結果',
+'d.infect.a3n':'無檢驗結果',
+'d.infect.g1':'24 小時內 ≥ 3 次稀水便，且超過平常次數',
+'d.infect.g2':'24 小時內 ≥ 2 次嘔吐',
+'d.infect.g3':'腹痛或腹部壓痛',
+'d.infect.g4':'噁心',
+'d.infect.g5':'發燒 ≥ 38℃',
+'d.infect.q4':'系統偵測：患部是否有膿液或膿性分泌物？',
+'d.infect.a4y':'有膿液或膿性分泌物',
+'d.infect.a4n':'無膿液',
+'d.infect.k1':'患部新發生或增加的發紅',
+'d.infect.k2':'患部新發生或增加的熱感',
+'d.infect.k3':'患部新發生或增加的腫脹',
+'d.infect.k4':'患部疼痛或壓痛',
+'d.infect.k5':'發燒 ≥ 38℃',
+'d.infect.k6':'漿液性分泌物',
+'d.infect.q5':'系統偵測：是否有膿性分泌物？',
+'d.infect.a5y':'有膿性分泌物',
+'d.infect.a5n':'無膿性分泌物',
+'d.infect.e1':'單眼或雙眼出現膿性分泌物',
+'d.infect.e2':'結膜新發生或增加的發紅',
+'d.infect.e3':'眼睛搔癢或疼痛',
+'d.infect.e4':'外耳道流出分泌物',
+'d.infect.e5':'口腔黏膜新發生之白斑或潰瘍',
+'d.infect.e6':'鼻腔膿性分泌物',
+'d.infect.ind':'符合《長期照護機構感染管制手冊》{s}收案標準（{c}，勾選 {n} 項）。系統自動帶入監測指標、感染密度計算與品管管制圖。'
 };
 
 /* ══════════════════════════════════════════════════════════
@@ -2509,8 +2546,6 @@ I18N.en = {
 'd.infect.cath':'System check: does this resident have an indwelling urinary catheter?',
 'd.infect.cathy':'Catheter in place',
 'd.infect.cathn':'No catheter',
-'d.infect.needy':'With a catheter, any one of the following is sufficient.',
-'d.infect.needn':'Without a catheter, at least three of the following are required.',
 'd.infect.symt':'Select the signs that apply',
 'd.infect.y1':'Fever ≥ 38°C',
 'd.infect.y2':'Urinary frequency',
@@ -2524,7 +2559,6 @@ I18N.en = {
 'd.infect.yes':'Yes',
 'd.infect.no':'No',
 'd.infect.in':'Case included',
-'d.infect.ind':'Meets the urinary tract infection criteria in the Long-Term Care Facility Infection Control Manual ({c}, {n} selected). Surveillance indicators, infection density and control charts update automatically.',
 'd.infect.out':'Case not included',
 'd.infect.outd':'{n} selected, short of the {need} this condition requires. The record stays on the excluded track and can still be retrieved.',
 'd.infect.count':'{n} of {need} selected',
@@ -2622,7 +2656,47 @@ I18N.en = {
 'arch.clear':'Clear',
 'fold.detail':'Structure and process',
 'fold.items':'points',
-'fold.pics':'images'
+'fold.pics':'images',
+'d.infect.need1':'Any one of the following is sufficient.',
+'d.infect.needN':'At least {n} of the following are required.',
+'d.infect.simplified':'A simplified demonstration. The real system follows the Long-Term Care Facility Infection Control Manual in full; the items and thresholds for each site are as the manual states.',
+'d.infect.q1':'System check: is chest imaging available to read?',
+'d.infect.a1y':'Yes, showing pneumonia or probable pneumonia',
+'d.infect.a1n':'No imaging, or imaging does not show pneumonia',
+'d.infect.r1':'Fever ≥ 38°C',
+'d.infect.r2':'New or worsening cough',
+'d.infect.r3':'New or increased sputum',
+'d.infect.r4':'Respiratory rate ≥ 25 / min',
+'d.infect.r5':'Oxygen saturation < 94% on room air',
+'d.infect.r6':'New abnormal findings on chest auscultation',
+'d.infect.r7':'New or worsening change in consciousness',
+'d.infect.q3':'System check: is there a positive stool test?',
+'d.infect.a3y':'Positive stool test on file',
+'d.infect.a3n':'No test result',
+'d.infect.g1':'≥ 3 loose stools in 24 h, above the resident\u2019s normal',
+'d.infect.g2':'≥ 2 episodes of vomiting in 24 h',
+'d.infect.g3':'Abdominal pain or tenderness',
+'d.infect.g4':'Nausea',
+'d.infect.g5':'Fever ≥ 38°C',
+'d.infect.q4':'System check: is there pus or purulent discharge at the site?',
+'d.infect.a4y':'Pus or purulent discharge present',
+'d.infect.a4n':'No pus',
+'d.infect.k1':'New or increased redness at the site',
+'d.infect.k2':'New or increased warmth at the site',
+'d.infect.k3':'New or increased swelling at the site',
+'d.infect.k4':'Pain or tenderness at the site',
+'d.infect.k5':'Fever ≥ 38°C',
+'d.infect.k6':'Serous drainage',
+'d.infect.q5':'System check: is there purulent discharge?',
+'d.infect.a5y':'Purulent discharge present',
+'d.infect.a5n':'No purulent discharge',
+'d.infect.e1':'Purulent discharge from one or both eyes',
+'d.infect.e2':'New or increased conjunctival redness',
+'d.infect.e3':'Itching or pain in the eye',
+'d.infect.e4':'Discharge from the ear canal',
+'d.infect.e5':'New white patches or ulceration of the oral mucosa',
+'d.infect.e6':'Purulent nasal discharge',
+'d.infect.ind':'Meets the {s} criteria in the Long-Term Care Facility Infection Control Manual ({c}, {n} selected). Surveillance indicators, infection density and control charts update automatically.'
 };
 
 /* ══════════════════════════════════════════════════════════
@@ -2722,7 +2796,7 @@ I18N.ja = {
 
 'pump.name':'スマート輸液ポンプ',
 'pump.sub':'指示の自動取込 · Drug Library 投与量チェック · 記録の書き戻し',
-'pump.pain':'輸液投与は頻度が高く риск も大きい業務ですが、従来は人の確認と手動設定に頼っていました。2025年には速度・投与量の設定誤りによる投薬インシデントが4件発生しています。',
+'pump.pain':'輸液投与は頻度が高くリスクも大きい業務ですが、従来は人の確認と手動設定に頼っていました。2025年には速度・投与量の設定誤りによる投薬インシデントが4件発生しています。',
 'pump.s1':'スマート輸液ポンプ133台の納入、初期設定、ハードウェアのセキュリティ試験を完了',
 'pump.s2':'HISの指示とNISの看護記録に双方向で連携',
 'pump.s3':'Drug Libraryに安全投与量と流量範囲を登録し、DERSによる動的チェックに対応',
@@ -3165,8 +3239,6 @@ I18N.ja = {
 'd.infect.cath':'システム確認：この入居者に尿道留置カテーテルはありますか？',
 'd.infect.cathy':'カテーテル留置あり',
 'd.infect.cathn':'カテーテル留置なし',
-'d.infect.needy':'カテーテル留置がある場合、次のいずれか1項目で登録できます。',
-'d.infect.needn':'カテーテル留置がない場合、次のうち少なくとも3項目が必要です。',
 'd.infect.symt':'該当する症状を選択してください',
 'd.infect.y1':'発熱 38℃以上',
 'd.infect.y2':'頻尿',
@@ -3180,7 +3252,6 @@ I18N.ja = {
 'd.infect.yes':'はい',
 'd.infect.no':'いいえ',
 'd.infect.in':'登録する',
-'d.infect.ind':'『長期ケア施設感染管理手引き』の尿路感染の登録基準に該当します（{c}、{n}項目選択）。監視指標、感染密度の計算、品質管理図へ自動反映されます。',
 'd.infect.out':'登録しない',
 'd.infect.outd':'{n}項目の選択で、この条件に必要な{need}項目に達していません。記録は非登録系統に残り、照会と遡及が可能です。',
 'd.infect.count':'{n}／{need}項目を選択',
@@ -3278,7 +3349,47 @@ I18N.ja = {
 'arch.clear':'表示を消す',
 'fold.detail':'構造とプロセス',
 'fold.items':'項目',
-'fold.pics':'枚'
+'fold.pics':'枚',
+'d.infect.need1':'次のいずれか1項目で登録できます。',
+'d.infect.needN':'次のうち少なくとも{n}項目が必要です。',
+'d.infect.simplified':'これは簡略化したデモです。実際のシステムは『長期ケア施設感染管理指針』の条件に沿って全項目を案内し、部位ごとの項目と基準は指針に従います。',
+'d.infect.q1':'システム確認：読影できる胸部X線はありますか？',
+'d.infect.a1y':'あり、肺炎または肺炎疑いを示す',
+'d.infect.a1n':'X線なし、または肺炎所見なし',
+'d.infect.r1':'発熱 38℃以上',
+'d.infect.r2':'新たに生じた、または悪化した咳',
+'d.infect.r3':'新たに生じた、または増加した喀痰',
+'d.infect.r4':'呼吸数 25回／分以上',
+'d.infect.r5':'室内空気下で酸素飽和度 94%未満',
+'d.infect.r6':'胸部聴診で新たな異常音',
+'d.infect.r7':'新たに生じた、または悪化した意識変化',
+'d.infect.q3':'システム確認：便検査の陽性結果はありますか？',
+'d.infect.a3y':'陽性の検査結果あり',
+'d.infect.a3n':'検査結果なし',
+'d.infect.g1':'24時間以内に3回以上の水様便で、普段より多い',
+'d.infect.g2':'24時間以内に2回以上の嘔吐',
+'d.infect.g3':'腹痛または腹部圧痛',
+'d.infect.g4':'嘔気',
+'d.infect.g5':'発熱 38℃以上',
+'d.infect.q4':'システム確認：患部に膿または膿性分泌物はありますか？',
+'d.infect.a4y':'膿または膿性分泌物あり',
+'d.infect.a4n':'膿なし',
+'d.infect.k1':'患部に新たに生じた、または増加した発赤',
+'d.infect.k2':'患部に新たに生じた、または増加した熱感',
+'d.infect.k3':'患部に新たに生じた、または増加した腫脹',
+'d.infect.k4':'患部の疼痛または圧痛',
+'d.infect.k5':'発熱 38℃以上',
+'d.infect.k6':'漿液性の分泌物',
+'d.infect.q5':'システム確認：膿性分泌物はありますか？',
+'d.infect.a5y':'膿性分泌物あり',
+'d.infect.a5n':'膿性分泌物なし',
+'d.infect.e1':'片眼または両眼からの膿性分泌物',
+'d.infect.e2':'結膜に新たに生じた、または増加した発赤',
+'d.infect.e3':'眼のかゆみまたは痛み',
+'d.infect.e4':'外耳道からの分泌物',
+'d.infect.e5':'口腔粘膜に新たに生じた白斑または潰瘍',
+'d.infect.e6':'膿性の鼻汁',
+'d.infect.ind':'『長期ケア施設感染管理指針』の{s}登録基準に該当します（{c}、{n}項目選択）。監視指標、感染密度の計算、品質管理図へ自動反映されます。'
 };
 
 /* ══════════════════════════════════════════════════════════
@@ -3821,8 +3932,6 @@ I18N.vi = {
 'd.infect.cath':'Hệ thống kiểm tra: người lưu trú này có đặt ống thông tiểu lưu không?',
 'd.infect.cathy':'Có ống thông tiểu lưu',
 'd.infect.cathn':'Không có ống thông tiểu',
-'d.infect.needy':'Có ống thông tiểu lưu thì chỉ cần một trong các mục sau là ghi nhận được.',
-'d.infect.needn':'Không có ống thông tiểu thì cần ít nhất ba trong các mục sau mới ghi nhận.',
 'd.infect.symt':'Hãy chọn các triệu chứng phù hợp',
 'd.infect.y1':'Sốt ≥ 38℃',
 'd.infect.y2':'Tiểu nhiều lần',
@@ -3836,7 +3945,6 @@ I18N.vi = {
 'd.infect.yes':'Có',
 'd.infect.no':'Không',
 'd.infect.in':'Ghi nhận ca',
-'d.infect.ind':'Đạt tiêu chuẩn ghi nhận nhiễm khuẩn tiết niệu trong "Sổ tay kiểm soát nhiễm khuẩn cơ sở chăm sóc dài hạn" ({c}, đã chọn {n} mục). Hệ thống tự đưa vào chỉ số giám sát, tính mật độ nhiễm khuẩn và biểu đồ kiểm soát chất lượng.',
 'd.infect.out':'Không ghi nhận ca',
 'd.infect.outd':'Đã chọn {n} mục, chưa đạt {need} mục mà điều kiện này yêu cầu. Hệ thống vẫn lưu hồ sơ ở tuyến không ghi nhận để tra cứu và truy ngược.',
 'd.infect.count':'Đã chọn {n} ／ cần {need} mục',
@@ -3934,7 +4042,47 @@ I18N.vi = {
 'arch.clear':'Bỏ đánh dấu',
 'fold.detail':'Cấu trúc và quy trình',
 'fold.items':'mục',
-'fold.pics':'ảnh'
+'fold.pics':'ảnh',
+'d.infect.need1':'Chỉ cần một trong các mục sau là ghi nhận được.',
+'d.infect.needN':'Cần ít nhất {n} trong các mục sau.',
+'d.infect.simplified':'Đây là bản minh họa rút gọn. Hệ thống thật đi theo đầy đủ "Sổ tay kiểm soát nhiễm khuẩn cơ sở chăm sóc dài hạn"; các mục và ngưỡng của từng vị trí lấy theo sổ tay.',
+'d.infect.q1':'Hệ thống kiểm tra: có phim X-quang ngực để đọc không?',
+'d.infect.a1y':'Có, cho thấy viêm phổi hoặc nghi viêm phổi',
+'d.infect.a1n':'Không có phim, hoặc phim không cho thấy viêm phổi',
+'d.infect.r1':'Sốt ≥ 38℃',
+'d.infect.r2':'Ho mới xuất hiện hoặc nặng lên',
+'d.infect.r3':'Đờm mới xuất hiện hoặc tăng lên',
+'d.infect.r4':'Nhịp thở ≥ 25 lần/phút',
+'d.infect.r5':'Độ bão hòa oxy < 94% với khí phòng',
+'d.infect.r6':'Nghe phổi có âm bất thường mới',
+'d.infect.r7':'Thay đổi ý thức mới xuất hiện hoặc nặng lên',
+'d.infect.q3':'Hệ thống kiểm tra: có kết quả xét nghiệm phân dương tính không?',
+'d.infect.a3y':'Có kết quả xét nghiệm dương tính',
+'d.infect.a3n':'Không có kết quả xét nghiệm',
+'d.infect.g1':'≥ 3 lần phân lỏng trong 24 giờ, nhiều hơn mức thường ngày',
+'d.infect.g2':'≥ 2 lần nôn trong 24 giờ',
+'d.infect.g3':'Đau bụng hoặc ấn đau bụng',
+'d.infect.g4':'Buồn nôn',
+'d.infect.g5':'Sốt ≥ 38℃',
+'d.infect.q4':'Hệ thống kiểm tra: vùng tổn thương có mủ hoặc dịch mủ không?',
+'d.infect.a4y':'Có mủ hoặc dịch mủ',
+'d.infect.a4n':'Không có mủ',
+'d.infect.k1':'Đỏ mới xuất hiện hoặc tăng lên tại vùng tổn thương',
+'d.infect.k2':'Nóng mới xuất hiện hoặc tăng lên tại vùng tổn thương',
+'d.infect.k3':'Sưng mới xuất hiện hoặc tăng lên tại vùng tổn thương',
+'d.infect.k4':'Đau hoặc ấn đau tại vùng tổn thương',
+'d.infect.k5':'Sốt ≥ 38℃',
+'d.infect.k6':'Dịch tiết thanh dịch',
+'d.infect.q5':'Hệ thống kiểm tra: có dịch mủ không?',
+'d.infect.a5y':'Có dịch mủ',
+'d.infect.a5n':'Không có dịch mủ',
+'d.infect.e1':'Dịch mủ từ một hoặc hai mắt',
+'d.infect.e2':'Đỏ kết mạc mới xuất hiện hoặc tăng lên',
+'d.infect.e3':'Ngứa hoặc đau mắt',
+'d.infect.e4':'Dịch chảy ra từ ống tai ngoài',
+'d.infect.e5':'Mảng trắng hoặc loét mới ở niêm mạc miệng',
+'d.infect.e6':'Dịch mũi có mủ',
+'d.infect.ind':'Đạt tiêu chuẩn ghi nhận {s} trong "Sổ tay kiểm soát nhiễm khuẩn cơ sở chăm sóc dài hạn" ({c}, đã chọn {n} mục). Hệ thống tự đưa vào chỉ số giám sát, tính mật độ nhiễm khuẩn và biểu đồ kiểm soát chất lượng.'
 };
 
 /* ══════════════════════════════════════════════════════════
@@ -4477,8 +4625,6 @@ I18N.ko = {
 'd.infect.cath':'시스템 확인: 이 입소자에게 유치도뇨관이 있습니까?',
 'd.infect.cathy':'유치도뇨관 있음',
 'd.infect.cathn':'유치도뇨관 없음',
-'d.infect.needy':'유치도뇨관이 있으면 아래 중 한 가지만 충족해도 등록할 수 있습니다.',
-'d.infect.needn':'유치도뇨관이 없으면 아래 중 최소 세 가지를 충족해야 등록할 수 있습니다.',
 'd.infect.symt':'해당하는 증상을 선택하세요',
 'd.infect.y1':'발열 38℃ 이상',
 'd.infect.y2':'빈뇨',
@@ -4492,7 +4638,6 @@ I18N.ko = {
 'd.infect.yes':'예',
 'd.infect.no':'아니오',
 'd.infect.in':'등록',
-'d.infect.ind':'『장기요양기관 감염관리 지침』의 요로감염 등록 기준에 부합합니다({c}, {n}개 선택). 감시 지표, 감염밀도 계산, 품질관리도에 자동 반영됩니다.',
 'd.infect.out':'미등록',
 'd.infect.outd':'{n}개를 선택해 이 조건이 요구하는 {need}개에 미치지 못했습니다. 기록은 미등록 트랙에 남아 조회와 소급이 가능합니다.',
 'd.infect.count':'{n} ／ {need}개 선택',
@@ -4590,7 +4735,47 @@ I18N.ko = {
 'arch.clear':'표시 지우기',
 'fold.detail':'구조와 과정',
 'fold.items':'항목',
-'fold.pics':'장'
+'fold.pics':'장',
+'d.infect.need1':'아래 중 한 가지만 해당해도 등록할 수 있습니다.',
+'d.infect.needN':'아래 중 최소 {n}가지가 필요합니다.',
+'d.infect.simplified':'간략화한 시연입니다. 실제 시스템은 『장기요양기관 감염관리 지침』의 조건을 모두 따라 안내하며, 부위별 항목과 기준은 지침을 따릅니다.',
+'d.infect.q1':'시스템 확인: 판독할 수 있는 흉부 X선이 있습니까?',
+'d.infect.a1y':'있으며 폐렴 또는 폐렴 의심 소견',
+'d.infect.a1n':'X선 없음, 또는 폐렴 소견 없음',
+'d.infect.r1':'발열 38℃ 이상',
+'d.infect.r2':'새로 생기거나 악화된 기침',
+'d.infect.r3':'새로 생기거나 늘어난 가래',
+'d.infect.r4':'호흡수 25회/분 이상',
+'d.infect.r5':'실내 공기에서 산소포화도 94% 미만',
+'d.infect.r6':'폐 청진에서 새로운 이상음',
+'d.infect.r7':'새로 생기거나 악화된 의식 변화',
+'d.infect.q3':'시스템 확인: 대변 검사 양성 결과가 있습니까?',
+'d.infect.a3y':'양성 검사 결과 있음',
+'d.infect.a3n':'검사 결과 없음',
+'d.infect.g1':'24시간 내 묽은 변 3회 이상, 평소보다 많음',
+'d.infect.g2':'24시간 내 구토 2회 이상',
+'d.infect.g3':'복통 또는 복부 압통',
+'d.infect.g4':'구역',
+'d.infect.g5':'발열 38℃ 이상',
+'d.infect.q4':'시스템 확인: 병변 부위에 고름이나 화농성 분비물이 있습니까?',
+'d.infect.a4y':'고름 또는 화농성 분비물 있음',
+'d.infect.a4n':'고름 없음',
+'d.infect.k1':'병변 부위에 새로 생기거나 늘어난 발적',
+'d.infect.k2':'병변 부위에 새로 생기거나 늘어난 열감',
+'d.infect.k3':'병변 부위에 새로 생기거나 늘어난 부종',
+'d.infect.k4':'병변 부위의 통증 또는 압통',
+'d.infect.k5':'발열 38℃ 이상',
+'d.infect.k6':'장액성 분비물',
+'d.infect.q5':'시스템 확인: 화농성 분비물이 있습니까?',
+'d.infect.a5y':'화농성 분비물 있음',
+'d.infect.a5n':'화농성 분비물 없음',
+'d.infect.e1':'한쪽 또는 양쪽 눈의 화농성 분비물',
+'d.infect.e2':'결막에 새로 생기거나 늘어난 발적',
+'d.infect.e3':'눈의 가려움 또는 통증',
+'d.infect.e4':'외이도에서 나오는 분비물',
+'d.infect.e5':'구강 점막에 새로 생긴 백반 또는 궤양',
+'d.infect.e6':'화농성 콧물',
+'d.infect.ind':'『장기요양기관 감염관리 지침』의 {s} 등록 기준에 부합합니다({c}, {n}개 선택). 감시 지표, 감염밀도 계산, 품질관리도에 자동 반영됩니다.'
 };
 
 </script>
@@ -5913,10 +6098,26 @@ function demoRoster(root){
 
 /* ══ 09 感染收案五步驟 ═════════════════════════════════════ */
 function demoInfect(root){
-  const SYM = ['d.infect.y1','d.infect.y2','d.infect.y3','d.infect.y4','d.infect.y5','d.infect.y6','d.infect.y7'];
-  let step = 1, site = '', cath = null, picked = [], sent = 'yes';
+  /* Every site carries its own conditional branch and symptom set, the way
+     the manual does — the condition changes how many signs are required. */
+  const SITES = {
+    '1': { q:'q1',   yes:'a1y',   no:'a1n',   needY:2, needN:3,
+           syms:['r1','r2','r3','r4','r5','r6','r7'] },                 /* 呼吸道 */
+    '2': { q:'cath', yes:'cathy', no:'cathn', needY:1, needN:3,
+           syms:['y1','y2','y3','y4','y5','y6','y7'] },                 /* 泌尿道 */
+    '3': { q:'q3',   yes:'a3y',   no:'a3n',   needY:1, needN:2,
+           syms:['g1','g2','g3','g4','g5'] },                           /* 腸胃道 */
+    '4': { q:'q4',   yes:'a4y',   no:'a4n',   needY:1, needN:2,
+           syms:['k1','k2','k3','k4','k5','k6'] },                      /* 皮膚軟組織 */
+    '5': { q:'q5',   yes:'a5y',   no:'a5n',   needY:1, needN:2,
+           syms:['e1','e2','e3','e4','e5','e6'] }                       /* 眼耳口鼻 */
+  };
+  let step = 1, site = '', cond = null, picked = [], sent = 'yes';
 
-  const need = () => cath === 'y' ? 1 : 3;
+  const S = () => SITES[site] || null;
+  const need = () => { const s = S(); return !s ? 0 : (cond === 'y' ? s.needY : s.needN); };
+  const condLabel = () => { const s = S(); return !s || !cond ? '' : t('d.infect.' + (cond === 'y' ? s.yes : s.no)); };
+
   function dots(){
     const ks = ['d.infect.st1','d.infect.st2','d.infect.st3','d.infect.st4','d.infect.st5'];
     let s = '<div class="stepdots">';
@@ -5930,38 +6131,46 @@ function demoInfect(root){
   function body(){
     if(step===1) return `<div class="sub-h">${esc(t('d.infect.pickres'))}</div>
       <button class="opt" data-res="1" aria-pressed="true">${esc(t('d.infect.res'))} A<small>${esc(t('d.infect.resd'))}</small></button>`;
+
     if(step===2) return `<div class="sub-h">${esc(t('d.infect.picksite'))}</div>
       <div class="opts">${[1,2,3,4,5].map(i=>
-        `<button class="opt" data-site="${i}" aria-pressed="${site==String(i)}">${esc(t('d.infect.site'+i))}</button>`).join('')}</div>`;
+        `<button class="opt" data-site="${i}" aria-pressed="${site===String(i)}">${esc(t('d.infect.site'+i))}</button>`).join('')}</div>`;
+
     if(step===3){
-      if(site!=='2') return `<div class="sub-h">${esc(t('d.infect.symt'))}</div>
-        <p class="notes">${esc(t('d.infect.rule'))}</p>`;
-      return `<div class="cathq">${esc(t('d.infect.cath'))}</div>
+      const s = S();
+      if(!s) return '';
+      const n = need();
+      return `<div class="cathq">${esc(t('d.infect.'+s.q))}</div>
         <div class="opts" style="margin-bottom:14px">
-          <button class="opt" data-c="y" aria-pressed="${cath==='y'}">${esc(t('d.infect.cathy'))}</button>
-          <button class="opt" data-c="n" aria-pressed="${cath==='n'}">${esc(t('d.infect.cathn'))}</button></div>
-        ${cath?`<div class="ruleline">${esc(t(cath==='y'?'d.infect.needy':'d.infect.needn'))}</div>
+          <button class="opt" data-c="y" aria-pressed="${cond==='y'}">${esc(t('d.infect.'+s.yes))}</button>
+          <button class="opt" data-c="n" aria-pressed="${cond==='n'}">${esc(t('d.infect.'+s.no))}</button></div>
+        ${cond?`<div class="ruleline">${esc(n===1 ? t('d.infect.need1') : t('d.infect.needN',{n}))}</div>
           <div class="sub-h">${esc(t('d.infect.symt'))}</div>
-          <div class="chks">${SYM.map((k,i)=>
-            `<label class="chk"><input type="checkbox" data-y="${i}" ${picked.includes(i)?'checked':''}>${esc(t(k))}</label>`).join('')}</div>
-          <div class="cnt ${picked.length>=need()?'ok':''}">${esc(t('d.infect.count',{n:picked.length, need:need()}))}</div>
+          <div class="chks">${s.syms.map((k,i)=>
+            `<label class="chk"><input type="checkbox" data-y="${i}" ${picked.includes(i)?'checked':''}>${esc(t('d.infect.'+k))}</label>`).join('')}</div>
+          <div class="cnt ${picked.length>=n?'ok':''}">${esc(t('d.infect.count',{n:picked.length, need:n}))}</div>
           <p class="notes">${esc(t('d.infect.rule'))}</p>`:''}`;
     }
+
     if(step===4) return `<div class="row">
         <div class="field" style="flex:0 1 180px"><label for="idt">${esc(t('d.infect.date'))}</label>
           <input id="idt" type="date" value="2026-11-14"></div>
         <div class="field" style="flex:0 1 150px"><label for="isn">${esc(t('d.infect.sent'))}</label>
           <select id="isn"><option value="yes"${sent==='yes'?' selected':''}>${esc(t('d.infect.yes'))}</option>
             <option value="no"${sent==='no'?' selected':''}>${esc(t('d.infect.no'))}</option></select></div></div>`;
+
     const ok = picked.length >= need();
-    return ok
-      ? vd('good', t('d.infect.in'), t('d.infect.ind',{c:t(cath==='y'?'d.infect.cathy':'d.infect.cathn'), n:picked.length}))
-      : vd('warn', t('d.infect.out'), t('d.infect.outd',{n:picked.length, need:need()}));
+    return (ok
+      ? vd('good', t('d.infect.in'),
+           t('d.infect.ind', {s:t('d.infect.site'+site), c:condLabel(), n:picked.length}))
+      : vd('warn', t('d.infect.out'),
+           t('d.infect.outd', {n:picked.length, need:need()})))
+      + `<p class="notes">${esc(t('d.infect.simplified'))}</p>`;
   }
 
   function canNext(){
     if(step===2) return !!site;
-    if(step===3) return site==='2' ? !!cath : true;
+    if(step===3) return !!cond;
     return true;
   }
 
@@ -5975,15 +6184,17 @@ function demoInfect(root){
   }
 
   root.addEventListener('click', e => {
-    const s = e.target.closest('[data-site]'); if(s){ site = s.dataset.site; cath=null; picked=[]; draw(); return; }
-    const c = e.target.closest('[data-c]');    if(c){ cath = c.dataset.c; picked=[]; draw(); return; }
+    const s = e.target.closest('[data-site]');
+    if(s){ site = s.dataset.site; cond = null; picked = []; draw(); return; }
+    const c = e.target.closest('[data-c]');
+    if(c){ cond = c.dataset.c; picked = []; draw(); return; }
     if(e.target.closest('[data-next]')){
-      step = Math.min(5, step+1); if(step===3 && site!=='2') step=4; draw();
+      step = Math.min(5, step+1); draw();
       if(step === 5){ (picked.length >= need()) ? Snd.done() : Snd.pumpWarn(); } else Snd.tick();
       return;
     }
-    if(e.target.closest('[data-prev]')){ step = Math.max(1, step-1); if(step===3 && site!=='2') step=2; draw(); return; }
-    if(e.target.closest('[data-restart]')){ step=1; site=''; cath=null; picked=[]; draw(); }
+    if(e.target.closest('[data-prev]')){ step = Math.max(1, step-1); draw(); return; }
+    if(e.target.closest('[data-restart]')){ step=1; site=''; cond=null; picked=[]; draw(); }
   });
   root.addEventListener('change', e => {
     if(e.target.dataset.y !== undefined){
